@@ -1,26 +1,26 @@
-List of Commands:
+List of Commands:<br />
+<br />
+Deletion:<br />
+kubectl delete deployment hello-app<br />
+kubectl delete service hello-app<br />
 
-Deletion:
-kubectl delete deployment hello-app
-kubectl delete service hello-app
+Step by Step:<br />
+minikube start<br />
+kubectl create deployment hello-app --image=gcr.io/google-samples/hello-app:2.0<br />
+kubectl expose deployment hello-app --type=NodePort --port=8080<br />
+minikube service hello-app --url<br />
+Curl <br />
 
-Step by Step:
-minikube start
-kubectl create deployment hello-app --image=gcr.io/google-samples/hello-app:2.0
-kubectl expose deployment hello-app --type=NodePort --port=8080
-minikube service hello-app --url
-Curl 
+Checking Commands:<br />
+kubectl get deployments<br />
+kubectl get pods<br />
+kubectl get services<br />
+kubectl get deployments<br />
+kubectl get pods<br />
+kubectl get services<br />
 
-Checking Commands:
-kubectl get deployments
-kubectl get pods
-kubectl get services
-kubectl get deployments
-kubectl get pods
-kubectl get services
-
-After Clone:
-minikube start
-minikube service hello-app --url
-Curl 
+After Clone:<br />
+minikube start<br />
+minikube service hello-app --url<br />
+Curl <br />
 
