@@ -15,9 +15,6 @@ Checking Commands:<br />
 kubectl get deployments<br />
 kubectl get pods<br />
 kubectl get services<br />
-kubectl get deployments<br />
-kubectl get pods<br />
-kubectl get services<br />
 
 After Clone:<br />
 minikube start<br />
